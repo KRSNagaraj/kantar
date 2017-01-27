@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 using Microsoft.Bot.Builder.Dialogs;
 using System.Collections.Generic;
+using KantarBotService.Dialog;
 
 namespace KantarBotService
 {
@@ -22,43 +23,7 @@ namespace KantarBotService
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
-            //activity.
-            if(activity.Type == ActivityTypes.ConversationUpdate)
-                {
-                IConversationUpdateActivity update = activity;
-                using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, activity))
-                {
-                    var client = new ConnectorClient(new Uri(activity.ServiceUrl)); ;//scope.Resolve<IConnectorClient>();
-                    if (update.MembersAdded.Any())
-                    {
-                        var reply = activity.CreateReply();
-                        var newMembers = update.MembersAdded?.Where(t => t.Id != activity.Recipient.Id);
-                        foreach (var newMember in newMembers)
-                        {
-
-                            reply.Attachments = new List<Attachment>();
-                            reply.Attachments.Add(new Attachment()
-                            {
-                                //ContentUrl = "https://upload.wikimedia.org/wikipedia/en/0/0c/Kantar_logo.png",
-                                ContentUrl = Url.Content("/img/kantar_logo_02.png"),
-                                ContentType = "image/jpeg",
-                                Name = "Welcome Kantar User! " ,
-
-                            });
-                            await client.Conversations.ReplyToActivityAsync(reply);
-
-                            reply = activity.CreateReply();
-                            reply.Text = "Welcome Kantar ";
-                            if (!string.IsNullOrEmpty(newMember.Name))
-                            {
-                                reply.Text += $" {newMember.Name}";
-                            }
-                            reply.Text += "!";
-                            await client.Conversations.ReplyToActivityAsync(reply);
-                        }
-                    }
-                }
-            }
+            
             if (activity.Type == ActivityTypes.Message)
             {
                 ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
@@ -69,7 +34,8 @@ namespace KantarBotService
                 
                 Activity reply = activity.CreateReply($"Apologies, we still working on enhancing this search engine, however, we record your request : ** { activity.Text} ** ");
                 //Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                await connector.Conversations.ReplyToActivityAsync(reply);
+                //await connector.Conversations.ReplyToActivityAsync(reply);
+                await Conversation.SendAsync(activity, () => new CardsDialog());
             }
             else
             {
@@ -91,6 +57,40 @@ namespace KantarBotService
                 // Handle conversation state changes, like members being added and removed
                 // Use Activity.MembersAdded and Activity.MembersRemoved and Activity.Action for info
                 // Not available in all channels
+                    IConversationUpdateActivity update = message;
+                    using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, message))
+                    {
+                        var client = new ConnectorClient(new Uri(message.ServiceUrl)); ;//scope.Resolve<IConnectorClient>();
+                        if (update.MembersAdded.Any())
+                        {
+                            var reply = message.CreateReply();
+                            var newMembers = update.MembersAdded?.Where(t => t.Id != message.Recipient.Id);
+                            foreach (var newMember in newMembers)
+                            {
+
+                                reply.Attachments = new List<Attachment>();
+                                reply.Attachments.Add(new Attachment()
+                                {
+                                    //ContentUrl = "https://upload.wikimedia.org/wikipedia/en/0/0c/Kantar_logo.png",
+                                    ContentUrl = Url.Content("/img/kantar_logo_02.png"),
+                                    ContentType = "image/jpeg",
+                                    Name = "Welcome Kantar User! ",
+
+                                });
+                                client.Conversations.ReplyToActivityAsync(reply);
+
+                                reply = message.CreateReply();
+                                reply.Text = "Welcome Kantar ";
+                                if (!string.IsNullOrEmpty(newMember.Name))
+                                {
+                                    reply.Text += $" {newMember.Name}";
+                                }
+                                reply.Text += "!";
+                                client.Conversations.ReplyToActivityAsync(reply);
+                            }
+                        }
+                    }
+                
             }
             else if (message.Type == ActivityTypes.ContactRelationUpdate)
             {
