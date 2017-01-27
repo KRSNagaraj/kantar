@@ -9,6 +9,7 @@ using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs.Internals;
 using Microsoft.Bot.Builder.Dialogs;
+using System.Collections.Generic;
 
 namespace KantarBotService
 {
@@ -34,6 +35,19 @@ namespace KantarBotService
                         var newMembers = update.MembersAdded?.Where(t => t.Id != activity.Recipient.Id);
                         foreach (var newMember in newMembers)
                         {
+
+                            reply.Attachments = new List<Attachment>();
+                            reply.Attachments.Add(new Attachment()
+                            {
+                                //ContentUrl = "https://upload.wikimedia.org/wikipedia/en/0/0c/Kantar_logo.png",
+                                ContentUrl = Url.Content("/img/kantar_logo_02.png"),
+                                ContentType = "image/jpeg",
+                                Name = "Welcome Kantar User! " ,
+
+                            });
+                            await client.Conversations.ReplyToActivityAsync(reply);
+
+                            reply = activity.CreateReply();
                             reply.Text = "Welcome Kantar ";
                             if (!string.IsNullOrEmpty(newMember.Name))
                             {
@@ -53,7 +67,7 @@ namespace KantarBotService
 
                 // return our reply to the user
                 
-                Activity reply = activity.CreateReply($"Sorry I did not understand: ** { activity.Text} ** ");
+                Activity reply = activity.CreateReply($"Apologies, we still working on enhancing this search engine, however, we record your request : ** { activity.Text} ** ");
                 //Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
