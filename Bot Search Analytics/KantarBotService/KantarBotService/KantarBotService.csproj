@@ -113,9 +113,36 @@
   <ItemGroup>
     <Content Include="default.htm" />
     <Content Include="Global.asax" />
+    <Content Include="home\bg_mobile-nav-left.png" />
+    <Content Include="home\bg_mobile-nav.png" />
+    <Content Include="home\btn_mobile-nav.png" />
+    <Content Include="home\favicon.ico" />
+    <Content Include="home\favicon_001.ico" />
+    <Content Include="home\index.css" />
+    <Content Include="home\index.html" />
+    <Content Include="home\kantarbrown-bold.svg" />
+    <Content Include="home\kantarbrown-light.svg" />
+    <Content Include="home\kantarbrown-regular.svg" />
+    <Content Include="home\logo.png" />
+    <Content Include="home\logo_001.png" />
+    <Content Include="home\rg6.0_0.37712600_1370881608_49d9_inspiration_articles_thumbnail_cows.jpg" />
+    <Content Include="home\rg6.0_0.70509200_1382972048_5c45_inspiration_articles_thumbnail_outube.png" />
+    <Content Include="home\rg6.0_0.79210300_1370949170_9087_inspiration_articles_thumbnail_ration.jpg" />
+    <Content Include="home\rg7.5.1_0.01085400_1449138211_e486_inspiration_articles_thumbnail_r.2015.jpg" />
+    <Content Include="home\rg7.5.1_0.33870200_1455629332_49fe_inspiration_articles_thumbnail_ge2-01.png" />
+    <Content Include="home\rg7.5.1_0.40296400_1470134707_5c6b_inspiration_articles_thumbnail_wick_1.jpg" />
+    <Content Include="home\rg7.5.1_0.70878800_1397739321_3547_inspiration_articles_thumbnail_.rates.jpg" />
+    <Content Include="home\rg7.5.1_0.82536500_1415285901_aafe_inspiration_articles_thumbnail_kuesan.jpg" />
+    <Content Include="home\sprite_links.png" />
+    <Content Include="home\sprite_links_001.png" />
+    <Content Include="home\sprite_social.png" />
+    <Content Include="home\sprite_social_001.png" />
+    <Content Include="home\sprite_social_mobile.png" />
+    <Content Include="home\sprite_social_mobile_001.png" />
     <Content Include="img\Kantar.png" />
     <Content Include="img\kantar_logo_01.png" />
     <Content Include="img\kantar_logo_02.png" />
+    <Content Include="Landing.htm" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -131,6 +158,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="home\index.dat" />
+    <Content Include="home\kantarbrown-bold.eot" />
+    <Content Include="home\kantarbrown-bold.ttf" />
+    <Content Include="home\kantarbrown-bold.woff" />
+    <Content Include="home\kantarbrown-light.eot" />
+    <Content Include="home\kantarbrown-light.ttf" />
+    <Content Include="home\kantarbrown-light.woff" />
+    <Content Include="home\kantarbrown-regular.eot" />
+    <Content Include="home\kantarbrown-regular.ttf" />
+    <Content Include="home\kantarbrown-regular.woff" />
     <None Include="Properties\PublishProfiles\kantarsearchanalytics-v01 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\kantarsearchanalytics-v02 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -139,6 +176,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Landing_files\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
