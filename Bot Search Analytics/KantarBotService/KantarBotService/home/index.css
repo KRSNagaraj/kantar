@@ -1,18 +1,21 @@
 /* ::::: http://www.kantar.com/css/style.css ::::: */
 
 iframe
-{background-image:url(logo.png); background-repeat:no-repeat; background-position-y:10%; background-position-x:40%}
+{background-image:url(logo.png); background-repeat:no-repeat; background-position-y:10%; background-position-x:40%; z-index=100;}
 
 #bg-text
 {
-    color:orange;
-    font-size:24px;
+    color:darkseagreen;
+    padding-top :22%;
+    padding-left :10%;
+    font-size:16px;
     transform:rotate(0deg);
     -webkit-transform:rotate(0deg);
+    z-index:0;
 }
 #botDiv{
     position:absolute;
-    z-index:0;
+    z-index:100;
     display:block;
     background-repeat:no-repeat;
     background-size:100% 100%;
