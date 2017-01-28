@@ -1,7 +1,25 @@
 /* ::::: http://www.kantar.com/css/style.css ::::: */
 
 iframe
-{background:url(https://www-kantar-com.s3.amazonaws.com/imgsupl/RG7.5.1_0.34872500_1473324474_8024_contact_thumbnail_iteimg.jpg) repeat right top}
+{background-image:url(logo.png); background-repeat:no-repeat; background-position-y:10%; background-position-x:40%}
+
+#bg-text
+{
+    color:orange;
+    font-size:24px;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+}
+#botDiv{
+    position:absolute;
+    z-index:0;
+    display:block;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-image:url(https://www-kantar-com.s3.amazonaws.com/imgsupl/RG7.5.1_0.34872500_1473324474_8024_contact_thumbnail_iteimg.jpg);
+
+  /*background:url(https://www-kantar-com.s3.amazonaws.com/imgsupl/RG7.5.1_0.34872500_1473324474_8024_contact_thumbnail_iteimg.jpg);*/
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0px; padding: 0px; border: 0px none; font-family: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: inherit; font-language-override: inherit; font-kerning: inherit; font-synthesis: inherit; font-variant: inherit; font-size: 100%; vertical-align: baseline; }
 html { line-height: 1; }
