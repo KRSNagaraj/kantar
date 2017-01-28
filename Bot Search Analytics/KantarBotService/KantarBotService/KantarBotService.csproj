@@ -115,6 +115,7 @@
     <Content Include="Global.asax" />
     <Content Include="home\bg_mobile-nav-left.png" />
     <Content Include="home\bg_mobile-nav.png" />
+    <Content Include="home\bot_logo.png" />
     <Content Include="home\btn_mobile-nav.png" />
     <Content Include="home\favicon.ico" />
     <Content Include="home\favicon_001.ico" />
@@ -150,11 +151,16 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Dialog\BaseDialog.cs" />
     <Compile Include="Dialog\CardDialog.cs" />
+    <Compile Include="Dialog\RecommendationDialog.cs" />
+    <Compile Include="Dialog\TicketDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\Recommendation.cs" />
+    <Compile Include="Support\RecommendationData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -177,9 +183,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Landing_files\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

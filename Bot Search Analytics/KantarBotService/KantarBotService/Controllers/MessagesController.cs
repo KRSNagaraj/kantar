@@ -26,16 +26,18 @@ namespace KantarBotService
             
             if (activity.Type == ActivityTypes.Message)
             {
-                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                // calculate something for us to return
-                int length = (activity.Text ?? string.Empty).Length;
+                //ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+                //// calculate something for us to return
+                //int length = (activity.Text ?? string.Empty).Length;
 
-                // return our reply to the user
-                
-                Activity reply = activity.CreateReply($"Apologies, we still working on enhancing this search engine, however, we record your request : ** { activity.Text} ** ");
-                //Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                //await connector.Conversations.ReplyToActivityAsync(reply);
-                await Conversation.SendAsync(activity, () => new CardsDialog());
+                //// return our reply to the user
+
+                //Activity reply = activity.CreateReply($"Apologies, we still working on enhancing this search engine, however, we record your request : ** { activity.Text} ** ");
+                ////Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                ////await connector.Conversations.ReplyToActivityAsync(reply);
+                //await Conversation.SendAsync(activity, () => new CardsDialog());
+
+                await Conversation.SendAsync(activity, () => new BaseDialog());
             }
             else
             {

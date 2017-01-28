@@ -1,7 +1,7 @@
 /* ::::: http://www.kantar.com/css/style.css ::::: */
 
 iframe
-{background-image:url(logo.png); background-repeat:no-repeat; background-position-y:10%; background-position-x:40%; z-index=100;}
+{background-image:url(bot_logo.png); background-repeat:no-repeat; background-position-y:10%; background-position-x:40%; z-index=100;}
 
 #bg-text
 {
