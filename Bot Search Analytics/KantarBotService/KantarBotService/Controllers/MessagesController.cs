@@ -11,6 +11,7 @@ using Microsoft.Bot.Builder.Dialogs.Internals;
 using Microsoft.Bot.Builder.Dialogs;
 using System.Collections.Generic;
 using KantarBotService.Dialog;
+using Autofac;
 
 namespace KantarBotService
 {
@@ -36,8 +37,11 @@ namespace KantarBotService
                 ////Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
                 ////await connector.Conversations.ReplyToActivityAsync(reply);
                 //await Conversation.SendAsync(activity, () => new CardsDialog());
-
-                await Conversation.SendAsync(activity, () => new BaseDialog());
+                using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, activity))
+                {
+                    await Conversation.SendAsync(activity, () => scope.Resolve<IDialog<object>>());
+                }
+                //await Conversation.SendAsync(activity, () => new BaseDialog());
             }
             else
             {

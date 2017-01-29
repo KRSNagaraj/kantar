@@ -1,0 +1,10 @@
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\bin\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\bin\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\bin\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\bin\Debug\Search.Contracts.pdb

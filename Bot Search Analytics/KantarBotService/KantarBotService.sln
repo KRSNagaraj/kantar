@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KantarBotService", "KantarBotService\KantarBotService.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{F20146BE-99D5-47FF-854E-1342CE7B0A28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D5086748-8092-4904-BA98-9A00DBAD064D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.Azure", "Search.Azure\Search.Azure.csproj", "{2734B7AA-2144-41A8-9423-225A544438B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.Dialogs", "Search.Dialogs\Search.Dialogs.csproj", "{C3583B53-4097-44D5-8537-2A8354B32654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.Contracts", "Search.Contracts\Search.Contracts.csproj", "{FF10CD6A-2BE1-4520-A01F-769C396906CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +25,29 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20146BE-99D5-47FF-854E-1342CE7B0A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20146BE-99D5-47FF-854E-1342CE7B0A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20146BE-99D5-47FF-854E-1342CE7B0A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20146BE-99D5-47FF-854E-1342CE7B0A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2734B7AA-2144-41A8-9423-225A544438B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2734B7AA-2144-41A8-9423-225A544438B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2734B7AA-2144-41A8-9423-225A544438B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2734B7AA-2144-41A8-9423-225A544438B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3583B53-4097-44D5-8537-2A8354B32654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3583B53-4097-44D5-8537-2A8354B32654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3583B53-4097-44D5-8537-2A8354B32654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3583B53-4097-44D5-8537-2A8354B32654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF10CD6A-2BE1-4520-A01F-769C396906CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF10CD6A-2BE1-4520-A01F-769C396906CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF10CD6A-2BE1-4520-A01F-769C396906CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF10CD6A-2BE1-4520-A01F-769C396906CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2734B7AA-2144-41A8-9423-225A544438B8} = {D5086748-8092-4904-BA98-9A00DBAD064D}
+		{C3583B53-4097-44D5-8537-2A8354B32654} = {D5086748-8092-4904-BA98-9A00DBAD064D}
+		{FF10CD6A-2BE1-4520-A01F-769C396906CB} = {D5086748-8092-4904-BA98-9A00DBAD064D}
 	EndGlobalSection
 EndGlobal

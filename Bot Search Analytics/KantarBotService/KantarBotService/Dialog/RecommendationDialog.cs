@@ -15,7 +15,9 @@ namespace KantarBotService.Dialog
     {
         public async Task StartAsync(IDialogContext context)
         {
+            //var result = AzureSearch.SearchHelper.search(context.UserData.ToString());
             await context.PostAsync("Welcome to the Hotels finder!");
+            //await context.PostAsync(result);
 
             var hotelsFormDialog = FormDialog.FromForm(this.BuildHotelsForm, FormOptions.PromptInStart);
 

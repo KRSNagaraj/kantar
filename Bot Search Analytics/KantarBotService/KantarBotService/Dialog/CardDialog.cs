@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using KantarBotService.AzureSearch;
+using Microsoft.Azure.Search.Models;
 
 namespace KantarBotService.Dialog
 {
@@ -22,12 +24,13 @@ namespace KantarBotService.Dialog
 
         public async Task StartAsync(IDialogContext context)
         {
-            context.Wait(this.MessageReceivedAsync);
+            context.Wait(this.MessageProcessAsyc);
         }
 
-        public async virtual Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
+        public async virtual Task MessageProcessAsyc(IDialogContext context, IAwaitable<IMessageActivity> result)
         {
             var message = await result;
+            var txt = context.UserData.ToString();
 
             PromptDialog.Choice<string>(
                 context,
@@ -55,15 +58,17 @@ namespace KantarBotService.Dialog
             message.AttachmentLayout = AttachmentLayoutTypes.List;
             await context.PostAsync(message);
 
-            context.Wait(this.MessageReceivedAsync);
+            context.Wait(this.MessageProcessAsyc);
         }
 
         private static Attachment GetSelectedCard(string selectedCard)
         {
+            var result = AzureSearch.SearchHelper.search("intelligence");
+
             switch (selectedCard)
             {
                 case HeroCard:
-                    return GetHeroCard();
+                    return GetHeroCard(result);
                 case ThumbnailCard:
                     return GetThumbnailCard();
                 case ReceiptCard:
@@ -78,21 +83,35 @@ namespace KantarBotService.Dialog
                 //    return GetAudioCard();
 
                 default:
-                    return GetHeroCard();
+                    return GetHeroCard(result);
             }
         }
 
-        private static Attachment GetHeroCard()
+        private static Attachment GetHeroCard(DocumentSearchResult<Assets> data)
         {
-            
+
+            //var heroCard = new HeroCard
+            //{
+            //    Title = "BotFramework Hero Card",
+            //    Subtitle = "Your bots — wherever your users are talking",
+            //    Text = "Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.",
+            //    Images = new List<CardImage> { new CardImage("https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg") },
+            //    Buttons = new List<CardAction> { new CardAction(ActionTypes.PostBack, "Get Started", value: "https://docs.botframework.com/en-us/") }
+            //};
+            //foreach (SearchResult<Assets> result in data.Results)
+            //{
+            //Console.WriteLine(result.Document);
+            var result = data.Results[0];
             var heroCard = new HeroCard
-            {
-                Title = "BotFramework Hero Card",
-                Subtitle = "Your bots — wherever your users are talking",
-                Text = "Build and connect intelligent bots to interact with your users naturally wherever they are, from text/sms to Skype, Slack, Office 365 mail and other popular services.",
-                Images = new List<CardImage> { new CardImage("https://sec.ch9.ms/ch9/7ff5/e07cfef0-aa3b-40bb-9baa-7c9ef8ff7ff5/buildreactionbotframework_960.jpg") },
-                Buttons = new List<CardAction> { new CardAction(ActionTypes.PostBack, "Get Started", value: "https://docs.botframework.com/en-us/") }
-            };
+                {
+                    Title = result.Document.Name,
+                    Subtitle = result.Document.AssetType,
+                    Text = result.Document.Description,
+                    Images = new List<CardImage> { new CardImage(result.Document.img_url) },
+                    Buttons = new List<CardAction> { new CardAction(ActionTypes.PostBack, "Get Started", value: "https://docs.botframework.com/en-us/") }
+                };
+            //}
+          
 
             return heroCard.ToAttachment();
         }

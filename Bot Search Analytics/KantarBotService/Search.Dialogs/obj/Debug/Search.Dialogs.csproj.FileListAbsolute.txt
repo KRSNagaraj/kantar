@@ -1,0 +1,82 @@
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Dialogs.dll.config
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Dialogs.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Autofac.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Chronic.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Bot.Builder.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Bot.Connector.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Newtonsoft.Json.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Azure.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.Net.Http.Formatting.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.Web.Http.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Azure.Search.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Azure.pdb
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Autofac.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Bot.Builder.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Bot.Connector.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Newtonsoft.Json.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.Net.Http.Formatting.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\System.Web.Http.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\Microsoft.Azure.Search.xml
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\ar\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\cs\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\de-dE\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\en\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\es\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\fa\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\fr\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\ja\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\ru\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\bin\Debug\zh-hans\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\obj\Debug\Search.Dialogs.csprojResolveAssemblyReference.cache
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\obj\Debug\Search.Dialogs.dll
+E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Dialogs\obj\Debug\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Dialogs.dll.config
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Dialogs.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Autofac.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Chronic.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Bot.Builder.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Bot.Connector.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Newtonsoft.Json.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Azure.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Contracts.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.Net.Http.Formatting.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.Web.Http.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Azure.Search.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Azure.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Autofac.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Bot.Builder.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Bot.Connector.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.IdentityModel.Protocol.Extensions.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Newtonsoft.Json.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.Net.Http.Formatting.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\System.Web.Http.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\Microsoft.Azure.Search.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\ar\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\cs\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\de-dE\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\en\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\es\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\fa\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\fr\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\ja\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\ru\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\zh-hans\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.csprojResolveAssemblyReference.cache
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.pdb

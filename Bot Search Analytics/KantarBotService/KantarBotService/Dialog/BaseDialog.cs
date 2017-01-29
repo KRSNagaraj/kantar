@@ -4,15 +4,20 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
+using Search.Azure.Services;
+using Microsoft.Bot.Builder.Internals.Fibers;
+using KantarBotService.Map;
+using Microsoft.Bot.Builder.Dialogs.Internals;
 
 namespace KantarBotService.Dialog
 {
     [Serializable]
     public class BaseDialog : IDialog<object>
     {
+        private static AzureSearchClient _searchClient = new AzureSearchClient(new AssetSearchMapper());
+
 
         private const string SearchOption = "Search";
-
         private const string SemanticSearchOption = "Semantic  Search";
         private const string RecommendationSearchOption = "Recommendation Search";
         private const string TicketOption = "Raise Ticket";
@@ -48,11 +53,19 @@ namespace KantarBotService.Dialog
             try
             {
                 string optionSelected = await result;
-
+                //var activity = context.MakeMessage();
                 switch (optionSelected)
                 {
                     case SearchOption:
-                        context.Call(new RecommendationDialog(), this.ResumeAfterOptionDialog);
+                        //context.Call(new SearchIntroDialog(_searchClient), this.ResumeAfterOptionDialog);
+                        //using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, activity))
+                        //{
+                        //using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, null))
+                        //{
+                        //    await Conversation.SendAsync(activity, () => scope.Resolve<IDialog<object>>());
+                        //}
+                        context.Call(new SearchIntroDialog(_searchClient), this.ResumeAfterOptionDialog);
+                        //}
                         break;
 
                     case SemanticSearchOption:
@@ -70,7 +83,7 @@ namespace KantarBotService.Dialog
 
         private async Task ResumeAfterSupportDialog(IDialogContext context, IAwaitable<int> result)
         {
-            var ticketNumber = await result;
+            var ticketNumber = 0; //  await result;
 
             await context.PostAsync($"Thanks for contacting our support team. Your ticket number is {ticketNumber}.");
             context.Wait(this.MessageReceivedAsync);
