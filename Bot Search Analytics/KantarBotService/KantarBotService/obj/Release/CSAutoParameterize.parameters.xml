@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="KantarBotDB-Web.config Connection String" description="KantarBotDB Connection String used in web.config by the application to access the database." defaultValue="data source=(local);initial catalog=Kantar_SearchAnalytics_v01;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Work\\HCL\\Kantar\\github\\kantar\\Bot\ Search\ Analytics\\KantarBotService\\KantarBotService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='KantarBotDB']/@connectionString" />
+  </parameter>
+</parameters>

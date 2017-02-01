@@ -1,0 +1,10 @@
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\KantarBotDB.dll.config
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\KantarBotDB.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\KantarBotDB.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\EntityFramework.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\EntityFramework.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\obj\Debug\KantarBotDB.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\obj\Debug\KantarBotDB.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotDB\obj\Debug\KantarBotDB.csprojResolveAssemblyReference.cache

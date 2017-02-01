@@ -57,7 +57,6 @@ E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBot
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Bot.Connector.xml
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
-E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Rest.ClientRuntime.xml
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.WindowsAzure.Configuration.xml
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Newtonsoft.Json.xml
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\System.IdentityModel.Tokens.Jwt.pdb
@@ -76,3 +75,29 @@ E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBot
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\obj\Release\KantarBotService.csprojResolveAssemblyReference.cache
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\obj\Release\Bot Application1.dll
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\obj\Release\Bot Application1.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.SqlServer.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Azure.Search.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Rest.ClientRuntime.Azure.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Spatial.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Azure.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Contracts.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Dialogs.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Azure.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.SqlServer.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Azure.Search.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Microsoft.Spatial.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\cs\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\de\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\es\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\fr\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\it\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\ja\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\ko\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\ru\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\zh-Hans\Microsoft.Spatial.resources.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\zh-Hant\Microsoft.Spatial.resources.dll

@@ -58,3 +58,7 @@ E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBot
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Azure.pdb
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Contracts.pdb
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.SqlServer.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\KantarBotService\bin\EntityFramework.SqlServer.xml

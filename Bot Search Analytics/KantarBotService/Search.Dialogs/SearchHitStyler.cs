@@ -15,11 +15,13 @@
             var hits = options as IList<SearchHit>;
             if (hits != null)
             {
-                var cards = hits.Select(h => new ThumbnailCard
+                var cards = hits.Select(h => new HeroCard
                 {
                     Title = h.Title,
+                    Subtitle = h.Subtitle,
                     Images = new[] { new CardImage(h.PictureUrl) },
-                    Buttons = new[] { new CardAction(ActionTypes.ImBack, "Pick this one", value: h.Key) },
+                    Buttons = new[] { new CardAction(ActionTypes.OpenUrl, "Open ⇗", value: h.DocURL),
+                        new CardAction(ActionTypes.PostBack, "Recommended", value: "Recommended:" +  h.Key), },
                     Text = h.Description
                 });
 

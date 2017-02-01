@@ -80,3 +80,7 @@ E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Di
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.csprojResolveAssemblyReference.cache
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.dll
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\obj\Debug\Search.Dialogs.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\EntityFramework.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\EntityFramework.xml
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Dialogs\bin\Debug\EntityFramework.SqlServer.xml

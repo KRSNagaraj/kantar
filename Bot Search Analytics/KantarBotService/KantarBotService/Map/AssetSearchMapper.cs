@@ -35,18 +35,11 @@ namespace KantarBotService.Map
                 Key = (string)hit.Document["id"],
                 Title = (string)hit.Document["Name"], //GetTitleForItem(hit),
                 PictureUrl = (string)hit.Document["img_url"],
+                DocURL = (string)hit.Document["doc_url"],
+                Subtitle = (string)hit.Document["DataType"],
                 Description = (string)hit.Document["Description"]
             };
         }
 
-        private static string GetTitleForItem(SearchResult result)
-        {
-            var beds = result.Document["beds"];
-            var baths = result.Document["baths"];
-            var city = result.Document["city"];
-            var price = result.Document["price"];
-
-            return $"{beds} bedroom, {baths} bath in {city}, ${price:#,0}";
-        }
     }
 }

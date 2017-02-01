@@ -19,8 +19,8 @@ namespace KantarBotService.Dialog
 
         private const string SearchOption = "Search";
         private const string SemanticSearchOption = "Semantic  Search";
-        private const string RecommendationSearchOption = "Recommendation Search";
-        private const string TicketOption = "Raise Ticket";
+        //private const string RecommendationSearchOption = "Recommendation Search";
+        private const string ShareIdeaOption = "Share your ideas";
 
         public async Task StartAsync(IDialogContext context)
         {
@@ -44,7 +44,7 @@ namespace KantarBotService.Dialog
         private void ShowOptions(IDialogContext context)
         {
             PromptDialog.Choice(context, this.OnOptionSelected, new List<string>()
-            { SearchOption,  RecommendationSearchOption, SemanticSearchOption, TicketOption}
+            { SearchOption,  SemanticSearchOption, ShareIdeaOption}
             , "Do you want to find something?", "Not a valid option", 3);
         }
 
@@ -69,7 +69,11 @@ namespace KantarBotService.Dialog
                         break;
 
                     case SemanticSearchOption:
-                        context.Call(new RecommendationDialog(), this.ResumeAfterOptionDialog);
+                        context.Call(new SemanticDialog(), this.ResumeAfterOptionDialog);
+                        break;
+
+                    case ShareIdeaOption:
+                        context.Call(new ShareIdeasDialog(), this.ResumeAfterOptionDialog);
                         break;
                 }
             }
