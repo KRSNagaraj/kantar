@@ -15,7 +15,7 @@
             var hits = options as IList<SearchHit>;
             if (hits != null)
             {
-                var cards = hits.Select(h => new HeroCard
+                var cards = hits.Select(h => new ThumbnailCard
                 {
                     Title = h.Title,
                     Subtitle = h.Subtitle,
