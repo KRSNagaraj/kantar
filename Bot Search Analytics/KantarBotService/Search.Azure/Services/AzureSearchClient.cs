@@ -54,8 +54,8 @@
                 {
                     foreach (string value in entry.Value)
                     {
-                        filter.Append(separator);
-                        filter.Append($"{entry.Key} eq '{EscapeFilterString(value)}'");
+                        filter.Append(separator); ///any(t: t eq 'wifi')
+                        filter.Append($"{entry.Key}/any(v:v eq '{EscapeFilterString(value)}')");
                         separator = " and ";
                     }
                 }

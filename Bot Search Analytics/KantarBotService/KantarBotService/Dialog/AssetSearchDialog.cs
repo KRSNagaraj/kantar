@@ -8,7 +8,7 @@ namespace KantarBotService.Dialog
     [Serializable]
     public class AssetSearchDialog : SearchDialog
     {
-        private static readonly string[] TopRefiners = { "Country", "Sector", "Contact" };
+        private static readonly string[] TopRefiners = { "countrylist", "brandinsights", "sector" };
 
         public AssetSearchDialog(ISearchClient searchClient) : base(searchClient, multipleSelection: false)
         {

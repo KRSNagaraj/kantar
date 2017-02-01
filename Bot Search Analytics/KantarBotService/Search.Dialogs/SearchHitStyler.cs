@@ -21,7 +21,7 @@
                     Subtitle = h.Subtitle,
                     Images = new[] { new CardImage(h.PictureUrl) },
                     Buttons = new[] { new CardAction(ActionTypes.OpenUrl, "Open ⇗", value: h.DocURL),
-                        new CardAction(ActionTypes.PostBack, "Recommended", value: "Recommended:" +  h.Key), },
+                        new CardAction(ActionTypes.PostBack, "Recommended", value: "Recommended:" +  h.Recommend), },
                     Text = h.Description
                 });
 

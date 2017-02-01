@@ -18,6 +18,7 @@
 
         public string PictureUrl { get; set; }
         public string DocURL { get; set; }
+        public string Recommend { get; set; }
 
         public string Description { get; set; }
 

@@ -33,11 +33,13 @@ namespace KantarBotService.Map
             return new SearchHit
             {
                 Key = (string)hit.Document["id"],
-                Title = (string)hit.Document["Name"], //GetTitleForItem(hit),
-                PictureUrl = (string)hit.Document["img_url"],
-                DocURL = (string)hit.Document["doc_url"],
-                Subtitle = (string)hit.Document["DataType"],
-                Description = (string)hit.Document["Description"]
+                Title = (string)hit.Document["assetname"], //GetTitleForItem(hit),
+                PictureUrl = (string)hit.Document["assetthumbnail"],
+                DocURL = (string)hit.Document["asseturl"],
+                Subtitle = string.Concat("Opco : ", (string)hit.Document["opco"], 
+                ", Context :" , (string)hit.Document["context"]),
+                Description = (string)hit.Document["assetdescription"],
+                Recommend = ((string)hit.Document["assetname"])
             };
         }
 
