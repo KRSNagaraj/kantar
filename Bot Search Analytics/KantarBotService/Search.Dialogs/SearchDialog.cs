@@ -37,7 +37,7 @@
             return this.InitialPrompt(context);
         }
 
-        public async Task Search(IDialogContext context, IAwaitable<string> input)
+        public virtual async Task Search(IDialogContext context, IAwaitable<string> input)
         {
             string text = input != null ? await input : null;
             if (this.MultipleSelection && text != null && text.ToLowerInvariant() == "list")

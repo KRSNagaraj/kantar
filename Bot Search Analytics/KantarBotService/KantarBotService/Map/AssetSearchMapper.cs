@@ -39,7 +39,8 @@ namespace KantarBotService.Map
                 Subtitle = string.Concat("Opco : ", (string)hit.Document["opco"], 
                 ", Context :" , (string)hit.Document["context"]),
                 Description = (string)hit.Document["assetdescription"],
-                Recommend = ((string)hit.Document["assetname"])
+                Recommend = ((string)hit.Document["assetname"]),
+                Context= ((string)hit.Document["context"])
             };
         }
 

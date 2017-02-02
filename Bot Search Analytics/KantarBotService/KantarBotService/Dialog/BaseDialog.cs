@@ -18,6 +18,7 @@ namespace KantarBotService.Dialog
     public class BaseDialog : IDialog<object>
     {
         private static AzureSearchClient _searchClient = new AzureSearchClient(new AssetSearchMapper());
+        private static AzureSearchClient _semanticSearchClient = new AzureSearchClient(new AssetSearchMapper());
 
 
         private const string SearchOption = "Search";
@@ -112,7 +113,7 @@ namespace KantarBotService.Dialog
                         break;
 
                     case SemanticSearchOption:
-                        context.Call(new SemanticDialog(), this.ResumeAfterOptionDialog);
+                        context.Call(new SemanticSearchIntroDialog(_semanticSearchClient), this.ResumeAfterOptionDialog);
                         break;
 
                     case ShareIdeaOption:
