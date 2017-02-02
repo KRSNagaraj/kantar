@@ -12,8 +12,10 @@ using Microsoft.Bot.Builder.Dialogs;
 using System.Collections.Generic;
 using KantarBotService.Dialog;
 using Autofac;
+using KantarBotService.App_Start;
+using System.Web;
 
-namespace KantarBotService
+namespace KantarBotService.Controllers
 {
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -24,7 +26,9 @@ namespace KantarBotService
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
-            
+            common.Connector = new ConnectorClient(new Uri(activity.ServiceUrl));
+            common.CurrentActivity = activity;
+
             if (activity.Type == ActivityTypes.Message)
             {
                 //ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
@@ -37,6 +41,31 @@ namespace KantarBotService
                 ////Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
                 ////await connector.Conversations.ReplyToActivityAsync(reply);
                 //await Conversation.SendAsync(activity, () => new CardsDialog());
+
+                //var name = HttpContext.Current.Request.LogonUserIdentity.Name;
+                //string prompt = "Welcome Kantar " + name + " !";
+                ////string prompt = $"Please authenticate your account at {loginUri.ToString()} to associate your user identity to your Microsoft Id.";
+                //var reply = common.CurrentActivity.CreateReply(prompt);
+                //string prompt;
+                //Activity reply =null;
+                ////await common.Connector.Conversations.ReplyToActivityAsync(reply);
+
+                //if (common.UserName == "" || common.UserName == null)
+                //{
+                //    //var loginUri = new Uri("http://http://kantarsearchanalytics-v01.azurewebsites.net/api/auth/receivetoken/?code=Working%20!&state=postlogin");
+                //    ////string prompt = $"Please authenticate your account at {loginUri.ToString()} to associate your user identity to your Microsoft Id.";
+                //    //prompt = "Welcome Kantar " + common.UserName + " !";
+                //    //reply = common.CurrentActivity.CreateReply(prompt);
+
+                //    //await common.Connector.Conversations.ReplyToActivityAsync(reply);
+                //}
+                //var loginUri = new Uri("http://kantarsearchanalytics-v01.azurewebsites.net/api/auth/receivetoken/?code=Working&state=postlogin");
+                ////string prompt = $"Please authenticate your account at {loginUri.ToString()} to associate your user identity to your Microsoft Id.";
+                //prompt = "Welcome Kantar " + common.UserName + " !";
+                //reply = common.CurrentActivity.CreateReply(prompt + " " + loginUri.ToString());
+                //await common.Connector.Conversations.ReplyToActivityAsync(reply);
+
+
                 using (var scope = DialogModule.BeginLifetimeScope(Conversation.Container, activity))
                 {
                     await Conversation.SendAsync(activity, () => scope.Resolve<IDialog<object>>());
@@ -85,14 +114,14 @@ namespace KantarBotService
                                 });
                                 client.Conversations.ReplyToActivityAsync(reply);
 
-                                reply = message.CreateReply();
-                                reply.Text = "Welcome Kantar ";
-                                if (!string.IsNullOrEmpty(newMember.Name))
-                                {
-                                    reply.Text += $" {newMember.Name}";
-                                }
-                                reply.Text += "!";
-                                client.Conversations.ReplyToActivityAsync(reply);
+                                //reply = message.CreateReply();
+                                //reply.Text = "Welcome Kantar ";
+                                //if (!string.IsNullOrEmpty(newMember.Name))
+                                //{
+                                //    reply.Text += $" {newMember.Name}";
+                                //}
+                                //reply.Text += "!";
+                                //client.Conversations.ReplyToActivityAsync(reply);
                             }
                         }
                     }

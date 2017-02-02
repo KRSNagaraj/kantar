@@ -47,11 +47,11 @@ namespace KantarBotService.Dialog
         {
             var selection = await input;
 
-            if (selection != null && selection.Any())
-            {
-                string list = string.Join("\n\n", selection.Select(s => $"* {s.Title} ({s.Key})"));
-                await context.PostAsync($"Done! For future reference, you selected these properties:\n\n{list}");
-            }
+            //if (selection != null && selection.Any())
+            //{
+            //    string list = string.Join("\n\n", selection.Select(s => $"* {s.Title} ({s.Key})"));
+            //    await context.PostAsync($"Done! For future reference, you selected these properties:\n\n{list}");
+            //}
 
             context.Done<object>(null);
         }

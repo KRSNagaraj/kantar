@@ -3,7 +3,6 @@ E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contrac
 E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache
 E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.dll
 E:\Work\HCL\Kantar\L\BotBuilder-Samples-master\CSharp\demo-Search\Search.Contracts\obj\Debug\Search.Contracts.pdb
-E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.dll
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.pdb
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\bin\Debug\Search.Contracts.dll
@@ -13,3 +12,4 @@ F:\Work\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contra
 F:\Work\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache
 F:\Work\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.dll
 F:\Work\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Debug\Search.Contracts.csprojResolveAssemblyReference.cache

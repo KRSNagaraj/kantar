@@ -8,6 +8,9 @@ using Search.Azure.Services;
 using Microsoft.Bot.Builder.Internals.Fibers;
 using KantarBotService.Map;
 using Microsoft.Bot.Builder.Dialogs.Internals;
+using Microsoft.Bot.Builder.FormFlow;
+using KantarBotService.AzureSearch;
+using KantarBotService.App_Start;
 
 namespace KantarBotService.Dialog
 {
@@ -19,8 +22,9 @@ namespace KantarBotService.Dialog
 
         private const string SearchOption = "Search";
         private const string SemanticSearchOption = "Semantic  Search";
-        //private const string RecommendationSearchOption = "Recommendation Search";
+        private const string RecommendationSearchOption = "Recommendation For you";
         private const string ShareIdeaOption = "Share your ideas";
+        public string UserName = "";
 
         public async Task StartAsync(IDialogContext context)
         {
@@ -33,21 +37,60 @@ namespace KantarBotService.Dialog
 
             if (message.Text.ToLower().Contains("help") || message.Text.ToLower().Contains("support") || message.Text.ToLower().Contains("problem"))
             {
-                await context.Forward(new TicketDialog(), this.ResumeAfterSupportDialog, message, CancellationToken.None);
+                await context.Forward(new ShareIdeasDialog(), this.ResumeAfterSupportDialog, message, CancellationToken.None);
             }
             else
             {
-                this.ShowOptions(context);
+                if (UserName == "" || UserName == null)
+                {
+                    await context.PostAsync("Welcome to the Kantar Bot!");
+                    var loginFormDialog = FormDialog.FromForm(this.BuildLoginForm, FormOptions.PromptInStart);
+
+                    context.Call(loginFormDialog, this.ShowOptions);
+                }
+                else
+                {
+                    this.ShowOptions(context);
+                }
+                //await context.Wait<LoginData>(_LoginWorkflow); //._LoginWorkflow(context);
             }
         }
 
-        private void ShowOptions(IDialogContext context)
+        public async Task _LoginWorkflow(IDialogContext context, IAwaitable<LoginData> data)
         {
-            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>()
-            { SearchOption,  SemanticSearchOption, ShareIdeaOption}
-            , "Do you want to find something?", "Not a valid option", 3);
+            //var result = AzureSearch.SearchHelper.search(context.UserData.ToString());
+            //await context.PostAsync(result);
+
+            var loginFormDialog = FormDialog.FromForm(this.BuildLoginForm, FormOptions.PromptInStart);
+
+            context.Call(loginFormDialog, this.ShowOptions);
         }
 
+        private IForm<LoginData> BuildLoginForm()
+        {
+            OnCompletionAsyncDelegate<LoginData> StartkantarBot = async (context, state) =>
+            {
+                UserName = state.Name;
+                await context.PostAsync($"Thank you and Welcome {state.Name}");
+                //await context.PostAsync($"Ok. Searching for Hotels in {state.Destination} from {state.CheckIn.ToString("MM/dd")} to {state.CheckIn.AddDays(state.Nights).ToString("MM/dd")}...");
+            };
+
+            return new FormBuilder<LoginData>()
+                .Field(nameof(LoginData.Name))
+                .OnCompletion(StartkantarBot)
+                .Build();
+        }
+
+        private async Task ShowOptions(IDialogContext context, IAwaitable<LoginData> data)
+        {
+            await ShowOptions(context);
+        }
+        private async Task ShowOptions(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.OnOptionSelected, new List<string>()
+            { SearchOption,  SemanticSearchOption, RecommendationSearchOption, ShareIdeaOption}
+            , "Do you want to find something?", "Not a valid option", 3);
+        }
         private async Task OnOptionSelected(IDialogContext context, IAwaitable<string> result)
         {
             try
@@ -73,7 +116,11 @@ namespace KantarBotService.Dialog
                         break;
 
                     case ShareIdeaOption:
-                        context.Call(new ShareIdeasDialog(), this.ResumeAfterOptionDialog);
+                        context.Call(new ShareIdeasDialog(), this.ResumeAfterSupportDialog);
+                        break;
+
+                    case RecommendationSearchOption:
+                        context.Call(new RFYDialog(), this.ResumeAfterSupportDialog);
                         break;
                 }
             }
@@ -85,11 +132,10 @@ namespace KantarBotService.Dialog
             }
         }
 
-        private async Task ResumeAfterSupportDialog(IDialogContext context, IAwaitable<int> result)
+        private async Task ResumeAfterSupportDialog(IDialogContext context, IAwaitable<object> result)
         {
-            var ticketNumber = 0; //  await result;
-
-            await context.PostAsync($"Thanks for contacting our support team. Your ticket number is {ticketNumber}.");
+            //var ticketNumber = 0; //  await result;
+          
             context.Wait(this.MessageReceivedAsync);
         }
 

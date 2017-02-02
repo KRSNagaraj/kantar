@@ -2,3 +2,4 @@ E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Co
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\bin\Release\Search.Contracts.pdb
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Release\Search.Contracts.dll
 E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Release\Search.Contracts.pdb
+E:\Work\HCL\Kantar\github\kantar\Bot Search Analytics\KantarBotService\Search.Contracts\obj\Release\Search.Contracts.csprojResolveAssemblyReference.cache
